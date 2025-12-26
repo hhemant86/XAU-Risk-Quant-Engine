@@ -1,62 +1,99 @@
-# XAU-Risk-Quant-Engine
-Python-based quantitative risk engine analyzing $425M+ in XAU/XAG executions to detect drawdowns and volatility regimes.
+XAU Risk Quant Engine
+AI-Driven Risk Intelligence & Volatility Regime Analysis
+Python-based quantitative risk intelligence system built to analyze high-stakes financial datasets (~$425M+ cumulative notional) to identify drawdowns, volatility regimes, and anomalous behavior under stress conditions.
 
-📌 Project Overview
-This project focuses on the systematic auditing and risk-profiling of high-notional trading data. By analyzing over $425 Million USD in cumulative turnover across global (Exness) and domestic (Zerodha) markets, this engine identifies institutional-scale drawdown triggers and volatility anomalies.
+🎯 Project Objective
+This project is engineered as a risk intelligence system, focusing on forensic financial data analysis rather than simple trade execution.
 
-The objective is to move beyond manual execution by building a Volatility-Regime Classifier that automates capital protection during "Black Swan" events.
+Its purpose is to demonstrate how structured financial data and high-notional execution logs can be transformed into:
 
-📊 Key Performance Metrics
-Total Notional Turnover: ~$425,681,199.48 USD
+Automated Risk Diagnostics: Identifying systemic failure points in high-volume environments.
 
-Global Execution (Exness): $225M+ (Live) | $65M+ (Stress-Test Simulation)
+Volatility Regime Classification: Categorizing market conditions to trigger automated capital protection.
 
-Domestic Execution (Zerodha): ₹18.4 Crore+ (MCX & NSE)
+Statistical Anomaly Detection: Filtering "noise" and "tail-risk" from institutional-grade datasets.
 
-Total Data Points: 7,451+ Verified Executions
+Foundations for ML-Driven Systems: Preparing high-integrity data for predictive volatility modeling.
 
-Processing Efficiency: Vectorized audit completed in 0.0742 seconds on ASUS TUF A16.
+The long-term roadmap evolves this engine into a machine learning–based risk classifier suitable for production-grade financial intelligence environments.
 
-🛡️ Risk Autopsy Findings
-A critical component of this project is the Maximum Drawdown (MDD) analysis. The engine successfully identified a catastrophic "Black Tuesday" liquidity event in the simulation data.
+📊 Scale & Performance
+Cumulative Notional Analyzed: ~$425,681,199.48 USD
 
-Identified Max Drawdown: $-228,608.72
+Total Records Processed: 7,451+ Verified Executions
 
-Critical Date: October 28, 2025
+Processing Model: Vectorized Python workflows (NumPy/Pandas)
 
-Primary Failure Mode: "Stop Out" (SO) clustering during high-volatility regimes.
+Execution Speed: ~0.074s for full audit on consumer-grade high-performance hardware
+
+🛡️ Risk Intelligence Findings (Forensic Audit)
+Drawdown Analysis
+Maximum Peak-to-Valley Drawdown: –$228,608.72
+
+Critical Stress Window: 28 October 2025
+
+Observed Failure Mode: "Stop-out" (SO) clustering during high-volatility regimes
+
+These findings reflect liquidity-driven cascading risk patterns typical of institutional-scale exposure in precious metal markets.
+
+🔍 Anomaly Detection & Statistical Integrity
+Algorithm: Implemented 3-Sigma (Standard Deviation) statistical filtering on 2,174 global executions.
+
+Tail-Risk Identification: Detected 33 anomalies (~1.5%) representing execution outliers.
+
+Distribution Validation: Confirmed that 98.5% of executions fall within a stable normal distribution range of -$169 to +$161.
+
+Outcome: Ensures data robustness and removes "fat-finger" noise before entering Machine Learning training phases.
+
+🗄️ Data Engineering & Persistence
+Architecture: Migrated 4,462 domestic execution records into a persistent SQLite-based Data Vault.
+
+Performance: Enabled high-concurrency historical querying for rapid risk audits and backtesting.
+
+Environment Consistency: Verified cross-device database compatibility (ASUS TUF A16 Desktop & Samsung S23 Ultra Mobile environments).
 
 🛠️ Technical Stack
+Languages: Python 3.12, SQL (SQLite)
+
 Hardware: ASUS TUF A16 (Ryzen 7 7735HS, Radeon RX 7600S)
 
-Mobile Command: Samsung S23 Ultra (Termux & Pydroid 3)
+Mobile Command: Samsung S23 Ultra (Termux & Pydroid 3 environment)
 
-Languages: Python 3.12
+Methodology:
 
-Libraries: Pandas, NumPy, Matplotlib
+Vectorized computations for low-latency analysis.
 
-Methodology: Vectorized data processing, Peak-to-Valley MDD algorithms.
+Peak-to-valley drawdown detection algorithms.
+
+3-Sigma statistical anomaly detection.
+
+Relational data modeling for financial persistence.
 
 📂 Project Structure
 Plaintext
 
 XAU-Risk-Quant-Engine/
-├── data/               # Private tradebooks (Git-ignored)
+├── data/                    # Private tradebooks & SQL Vault (git-ignored)
 ├── scripts/
-│   ├── audit.py             # Global execution turnover script
-│   ├── equity_curve.py      # Visual timeline of P/L
-│   └── drawdown_analysis.py # MDD and Risk Threshold logic
+│   ├── audit.py             # Global turnover & cumulative notional logic
+│   ├── equity_curve.py      # P/L timeline reconstruction logic
+│   ├── drawdown_analysis.py # MDD, Stress Window & Peak-to-Valley logic
+│   ├── anomaly_detection.py # Statistical 3-Sigma filtering logic
+│   ├── migrate_to_sql.py    # SQLite persistence & migration engine
+│   └── zerodha_portfolio.py # Domestic portfolio segment analytics
 ├── results/
-│   ├── equity_curve.png     # Visualized performance
-│   └── drawdown_analysis.png# Visualized risk profile
-└── README.md           # Professional project documentation
+│   ├── equity_curve.png     # Visualized performance data
+│   └── drawdown_analysis.png# Visualized risk & drawdown profile
+├── README.md                # Institutional-grade project documentation
+└── .gitignore               # Security & data privacy configurations
 🚀 Future Roadmap
-Phase 1 (Current): Data Auditing & Risk Fingerprinting.
+Phase 1 (Current): Data Engineering, Forensic Auditing & Statistical Fingerprinting.
 
-Phase 2: Machine Learning-based Volatility Forecasting (VIX Correlation).
+Phase 2: Machine Learning-based Volatility Regime Forecasting & VIX Correlation.
 
-Phase 3: Automated Webhook Integration for Real-time Capital Locking.
+Phase 3: Automated Webhook Integration for Real-time Capital Exposure Locking.
 
-🤝 Contact
-[Hemant Verma] Quantitative Research & AI Development [www.linkedin.com/in/hemant-verma-311b6031a] | [hemant.verma866@hotmail.com]
+🤝 Contact & Professional Profile
+Hemant Verma Quantitative Research & Risk Intelligence
+[www.linkedin.com/in/hemant-verma-311b6031a] | [hemant.verma866@hotmail.com]
 
