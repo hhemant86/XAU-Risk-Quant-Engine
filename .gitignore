@@ -1,14 +1,26 @@
-# Private trading data
+# =========================
+# Private & sensitive data
+# =========================
 data/
-*.csv
-*.xlsx
+data/**
+*.db
+*.sqlite
 
+# =========================
 # Python
+# =========================
 __pycache__/
 *.pyc
 .venv/
 .env
 
+# =========================
+# Local experiments
+# =========================
+scripts/sandbox.py
+
+# =========================
 # OS / Editor
+# =========================
 .DS_Store
 .vscode/
