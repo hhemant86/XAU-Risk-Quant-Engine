@@ -1,3 +1,11 @@
+"""
+Drawdown & Stress Analysis Module
+--------------------------------
+Purpose:
+Quantify peak-to-valley drawdowns and identify stress windows
+that characterize regime shifts and systemic risk exposure.
+"""
+
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
