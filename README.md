@@ -40,6 +40,8 @@ Asset Concentration: Identified primary risk concentration in Energy Derivatives
 - **Seasonality Audit**: Mapped ₹18.4 Cr of turnover across time-day matrices to detect execution "hot zones."
 - **Visual Evidence**: 
 ![Volatility Heatmap](results/volatility_heatmap.png)
+- **Anomaly Correlation**: Identified 77 tail-risk events; 32% of anomalies are concentrated during the 16:00-18:00 window.
+- **Risk Mitigation Insight**: Proven correlation between high execution turnover and statistical outliers, necessitating enhanced margin buffers during US-market overlap.
 
 Institutional Exposure: Successfully audited a single-asset exposure cluster in Natural Gas exceeding ₹7.4 Crore (~$900k).
 
