@@ -35,6 +35,12 @@ Observed Failure Mode: "Stop-out" (SO) clustering during high-volatility regimes
 Day 4 Update: Commodity Exposure Intelligence
 Asset Concentration: Identified primary risk concentration in Energy Derivatives (Natural Gas Futures & Crude Oil Options).
 
+### Day 5 Update: Institutional Execution Heatmap
+- **Behavioral Fingerprinting**: Generated an execution-density heatmap to identify peak liquidity windows.
+- **Seasonality Audit**: Mapped ₹18.4 Cr of turnover across time-day matrices to detect execution "hot zones."
+- **Visual Evidence**: 
+![Volatility Heatmap](results/volatility_heatmap.png)
+
 Institutional Exposure: Successfully audited a single-asset exposure cluster in Natural Gas exceeding ₹7.4 Crore (~$900k).
 
 Liquidity Neutrality: Verified a balanced buy/sell notional footprint (Buy: ₹372.2L | Sell: ₹370.1L), demonstrating professional-grade execution and liquidity management.
