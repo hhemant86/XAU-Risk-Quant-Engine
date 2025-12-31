@@ -1,4 +1,9 @@
-# Mapping your Real-Money Zerodha Turnover to Business Segments
+
+"""
+Domestic Portfolio Integration:
+Parses and cleans tradebook data for the Indian Commodity Market (MCX).
+Standardizes execution logs for migration into the centralized SQL Risk Vault.
+"""# Mapping your Real-Money Zerodha Turnover to Business Segments
 zerodha_portfolio = {
     "MCX_Commodity": 181955053.50, # approx ₹18.2 Cr
     "NSE_FO": 2113641.25,          # approx ₹21 Lakhs

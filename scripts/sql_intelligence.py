@@ -1,3 +1,8 @@
+"""
+Performance Visualization Engine:
+Generates high-fidelity equity curves from multi-asset execution data.
+Includes moving average overlays to identify performance momentum and structural shifts.
+"""
 import sqlite3
 import pandas as pd
 import os

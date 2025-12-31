@@ -1,3 +1,10 @@
+"""
+Anomaly Correlation Analysis:
+Maps 3-Sigma outliers against execution time-zones and liquidity windows.
+Identifies systemic risk clusters during global market overlaps (e.g., EU-US open).
+"""
+
+
 import sqlite3
 import pandas as pd
 import os

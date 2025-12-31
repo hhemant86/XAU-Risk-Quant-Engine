@@ -1,3 +1,8 @@
+"""
+Volatility Regime Classifier:
+Uses rolling-window standard deviation to categorize market conditions into 
+CALM, MODERATE, or EXTREME regimes for dynamic capital protection.
+"""
 import sqlite3
 import pandas as pd
 import numpy as np

@@ -1,3 +1,8 @@
+"""
+Behavioral Heatmapping:
+Visualizes turnover density across a time-day matrix to identify peak liquidity exposure.
+Provides a behavioral fingerprint of institutional-scale execution.
+"""
 import sqlite3
 import pandas as pd
 import matplotlib.pyplot as plt

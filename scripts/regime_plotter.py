@@ -1,3 +1,8 @@
+"""
+Stress Map Visualization:
+Overlays EXTREME volatility regimes onto price action timelines.
+Identifies volatility contagion clusters to assist in draw-down prevention.
+"""
 import sqlite3
 import pandas as pd
 import matplotlib.pyplot as plt

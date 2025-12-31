@@ -1,3 +1,8 @@
+"""
+SQL Persistence Layer:
+Engineers the migration of raw execution logs into a structured SQLite Data Vault.
+Ensures relational integrity and high-concurrency access for forensic auditing.
+"""
 import pandas as pd
 import sqlite3
 import os

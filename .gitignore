@@ -1,26 +1,31 @@
-# =========================
-# Private & sensitive data
-# =========================
+# ==========================================
+# XAU RISK QUANT ENGINE - SECURITY PROTOCOL
+# ==========================================
+
+# 1. Private & Sensitive Data (MANDATORY)
 data/
 data/**
 *.db
 *.sqlite
 
-# =========================
-# Python
-# =========================
+# 2. Global CSV Protection
+# This blocks all CSVs by default to protect proprietary trade logs
+*.csv
+
+# 3. Results Whitelist (The "Exemption" Rule)
+# We allow specific analytic samples for recruiter verification
+!results/regime_sample.csv
+!results/anomalies_found.csv
+!results/*.png
+
+# 4. Python Environment
 __pycache__/
 *.pyc
 .venv/
 .env
 
-# =========================
-# Local experiments
-# =========================
+# 5. Local Sandbox & Editors
 scripts/sandbox.py
-
-# =========================
-# OS / Editor
-# =========================
 .DS_Store
 .vscode/
+.idea/

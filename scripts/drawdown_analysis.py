@@ -1,9 +1,7 @@
 """
-Drawdown & Stress Analysis Module
---------------------------------
-Purpose:
-Quantify peak-to-valley drawdowns and identify stress windows
-that characterize regime shifts and systemic risk exposure.
+Drawdown & Resilience Analysis:
+Calculates Peak-to-Valley loss metrics (Maximum Drawdown) and identifies recovery duration.
+Used to stress-test the portfolio against historical 3-Sigma market events.
 """
 
 import os
